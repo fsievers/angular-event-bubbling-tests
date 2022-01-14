@@ -1,0 +1,13 @@
+.list {
+    height: 10rem;
+    width: 40rem;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+:host {
+    padding: 2rem;
+}

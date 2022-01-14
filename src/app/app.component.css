@@ -1,0 +1,9 @@
+app-event-per-row {
+    background-color: aqua;
+    display: block;
+}
+
+app-event-on-parent {
+    background-color: burlywood;
+    display: block;
+}

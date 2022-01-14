@@ -1,1 +1,13 @@
 <p>event-on-parent works!</p>
+Having {{items?.length}} elements
+
+<button *ngIf="!showItems" (click)="showItems = true">Show items</button>
+<button *ngIf="showItems" (click)="showItems = false">Hide items</button>
+<div class="list" (click)="onClick($event, 'left-click')" (dblclick)="onClick($event, 'double-left-click')"
+    (contextmenu)="onClick($event, 'right-click')">
+    <ng-container *ngIf="showItems">
+        <div *ngFor="let item of items">{{item}}</div>
+    </ng-container>
+</div>
+
+<pre>{{output}}</pre>
